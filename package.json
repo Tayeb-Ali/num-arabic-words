@@ -1,0 +1,27 @@
+{
+    "name": "num-arabic-words",
+    "version": "1",
+    "description": "Convert digits to arabic words",
+    "main": "index.js",
+    "scripts": {
+        "test": "standard"
+    },
+    "keywords": [
+        "digit",
+        "convert",
+        "word",
+        "number",
+        "amount",
+        "arabic"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/tayeb-ali/num-arabic-words.git"
+    },
+    "author": "Elteyab@thesmarter-sd.xyz",
+    "license": "MIT",
+    "devDependencies": {
+        "standard": "^16.0.3",
+        "tap": "^14.10.7"
+    }
+}
