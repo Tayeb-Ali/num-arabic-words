@@ -21,7 +21,7 @@
     "author": "Elteyab@thesmarter-sd.xyz",
     "license": "MIT",
     "devDependencies": {
-        "standard": "^16.0.3",
+        "standard": "^17.0.0",
         "tap": "^15.0.1"
     }
 }
