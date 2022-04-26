@@ -22,6 +22,6 @@
     "license": "MIT",
     "devDependencies": {
         "standard": "^16.0.3",
-        "tap": "^15.0.1"
+        "tap": "^16.1.0"
     }
 }
