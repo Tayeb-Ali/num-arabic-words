@@ -21,7 +21,7 @@ npm i num-arabic-words
 # Usage
 
 ```js
-const numWords = require('num-araibc-words')
+const numWords = require('num-arabic-words')
 
 const amountInWords = numWords(12345) // اثنا عشر ألفاً  وثلاثمائة و خمس واربعين
 ```
