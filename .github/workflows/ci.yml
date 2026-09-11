@@ -3,21 +3,13 @@ name: CI
 on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 12
+          node-version: 20
+          cache: npm
       - run: npm ci
       - run: npm test
-
-  automerge:
-    needs: build
-    runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request' }}
-    steps:
-      - uses: fastify/github-action-merge-dependabot@v1
-        with:
-          github-token: ${{secrets.github_token}}

@@ -1,27 +1,64 @@
 {
-    "name": "num-arabic-words",
-    "version": "1",
-    "description": "Convert digits to arabic words",
-    "main": "index.js",
-    "scripts": {
-        "test": "standard"
+  "name": "num-arabic-words",
+  "version": "2.1.0",
+  "description": "Convert numbers to words in Arabic, Hindi, French, Persian and Russian — zero dependencies, works in Node, Deno, Bun, browsers and any JS/TS framework",
+  "type": "commonjs",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "unpkg": "./dist/umd/num-arabic-words.min.js",
+  "jsdelivr": "./dist/umd/num-arabic-words.min.js",
+  "exports": {
+    ".": {
+      "types": "./dist/cjs/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/cjs/index.js"
     },
-    "keywords": [
-        "digit",
-        "convert",
-        "word",
-        "number",
-        "amount",
-        "arabic"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/tayeb-ali/num-arabic-words.git"
-    },
-    "author": "Elteyab@thesmarter-sd.xyz",
-    "license": "MIT",
-    "devDependencies": {
-        "standard": "^17.1.0",
-        "tap": "^18.7.2"
-    }
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "README.ar.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "typecheck": "npx tsc -p tsconfig.cjs.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "arabic",
+    "hindi",
+    "french",
+    "persian",
+    "farsi",
+    "russian",
+    "tafqeet",
+    "تفقيط",
+    "number-to-words",
+    "arabic-numbers",
+    "invoice",
+    "typescript",
+    "esm",
+    "cjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tayeb-ali/num-arabic-words.git"
+  },
+  "author": "Elteyab@thesmarter-sd.xyz",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.5.0"
+  }
 }
