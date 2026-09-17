@@ -1,5 +1,8 @@
 # num-arabic-words
 
+ 
+[![Socket Badge](https://badge.socket.dev/npm/package/num-arabic-words/2.1.0)](https://badge.socket.dev/npm/package/num-arabic-words/2.1.0)[![Socket Badge](https://badge.socket.dev/npm/package/num-arabic-words/2.1.0)](https://badge.socket.dev/npm/package/num-arabic-words/2.1.0)
+ 
 Convert numbers to words in **Arabic, Hindi, French, Persian and Russian** —
 correct native grammar, zero runtime dependencies, works everywhere
 JavaScript/TypeScript runs.
